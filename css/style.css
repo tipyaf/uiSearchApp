@@ -1,0 +1,72 @@
+body{
+        max-width: 2000px;
+        max-height: 700px;
+}
+td{
+        display: table-cell;
+        vertical-align: middle !important;
+}
+header{
+        height: 100vh;
+        background-image: url("http://iwallpapers2.free.fr/images/Paysages/Hiver/Magnifique_fond_ecran_HD_-_Hiver.jpg");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 1.5s;
+}
+.italic{
+        font-style: italic;
+}
+.transition-1s{
+       transition: all 1s;
+}
+.little-header{
+        height: 20vh;
+        transition: all 1.5s;
+}
+.search{
+        width: 80%;
+        text-align: center;
+}
+.search input{
+        width: 100% !important;
+        /*height: 37px;*/
+        /*background-color: rgba(240, 248, 255, 0.32);*/
+        color: white;
+        font-weight: bold;
+        /*border-color: #03a9f4 !important;*/
+}
+/*.search label{*/
+        /*color: #03a9f4 !important;*/
+/*}*/
+.search button{
+        margin-left: -4px;
+}
+.bkg-white{
+        background-color: white;
+}
+.down{
+        color: white;
+        font-size: 30px;
+}
+.errorMsg{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 0;
+        text-align: center;
+        opacity:1;
+}
+.errorMsg-leave{
+        width: 0;
+        position: fixed;
+        bottom: 500px;
+        margin-bottom: 0;
+        text-align: center;
+        opacity: 0;
+        transition: all 1s;
+}

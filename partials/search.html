@@ -1,0 +1,14 @@
+
+<header >
+    <!--ng-init="onTop = false" ng-class="{'little-header': onTop}"-->
+    <!--<h1 class="alert-danger alert">Votre recherche</h1>-->
+    <div class="search form-inline form-group form-group-lg label-floating has-info">
+        <label for="search" class="control-label">Votre recherche</label>
+        <input id="search" type="text" ng-model="mySearch" class="form-control">
+        <button ng-click="onMySearch(mySearch)" class="btn btn-raised btn-info"><span class="glyphicon glyphicon-search"></span></button>
+        
+    </div>
+    <div class="alert alert-info errorMsg transition-05s" ng-class="{'errorMsg-leave' : !errorMsg}"><span class="glyphicon glyphicon-info-sign"></span>  Désolé, aucune réponse ne correspond à <span class="italic">"{{currentSearch}}"</span></div>
+    <div class="alert alert-danger errorMsg transition-05s" ng-class="{'errorMsg-leave' : !errorNoSearch}"><span class="glyphicon glyphicon-alert"></span>  Veuillez entrer une recherche avant de valider</div>
+</header>
+

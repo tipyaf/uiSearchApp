@@ -1,0 +1,24 @@
+
+<div >
+    <table style="width:100%" class="table bottom">
+        <tr>
+            <th>logo</th>
+            <th>Catégories</th>
+            <th>Titre</th>
+            <th>Tags</th>
+        </tr>
+        
+        <tr ng-repeat="response in responses" class="panel panel-default">
+            <td><img src="{{response._source.img}}" alt=""></td>
+            <td>{{response._source.category}}</td>
+            <td>{{response._source.title}}</td>
+            <td>
+                <ul>
+                    <li ng-repeat="tag in response._source.tags">{{tag}}</li>
+                </ul>
+            </td>
+        </tr>
+    
+    </table>
+    
+</div>
